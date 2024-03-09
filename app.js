@@ -37,7 +37,7 @@ app.listen(8080,()=>{
 
 
 
-app.get("/listings",async  (req,res)=>{
+app.get("/",async  (req,res)=>{
  let allListings =   await Listing.find({});
 //  res.send("hellow world");
  res.render("./listings/index.ejs",{allListings});
